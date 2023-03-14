@@ -4,13 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Picolé</title>
+    <title>Atividade14</title>
     <style>
-        .botoes
+        .texto
         {
-            width: 100%;
-            display: flex;
-            justify-content: right;
+            width: 470px;
+            height: 80px;
         }
     </style>
 </head>
@@ -18,48 +17,21 @@
     
     <fieldset>
         
-        <legend> Dados do Picolezinho </legend>
+        <legend> Dados Pessoais </legend>
+        
         Descrição: 
-        <input type="text" class="caixa_larga" id="descriçao">
+        <input type=”text” class=”caixa_larga” id=”nome”>
         <br> <br>
-        Digite o preço:
-        <input type="text" class="caixa_larga" id="preço">
+        Nome:
+        <input type=”text” class=”caixa_larga” id=”endereço”>
         <br> <br>
-        Fornecedor do produto:
-        <input type="text" class="caixa_larga" id="fornecedor">
+        Endereço:
+        <input type=”text” class=”caixa_larga” id=”cidade”>
         <br> <br>
-        Quantidade a desenrolar:
+        Cidade:
         <input type="number" class="caixa_larga" id="quantidade">
         <br> <br>
-        Data do pedido:
-        <input type="date" id="data_pedido">
-
-    </fieldset>
-
-    <br> <br>
-
-    <fieldset>
-        
-        <legend> Sobre o sabor </legend>
-        
-        Escolha somente 1 sabor:
-        <br> <br>
-        <input type="radio" id="chocolate" name="sabores">
-        Chocolate
-        <input type="radio" id="creme" name="sabores">
-        Creme
-        <input type="radio" id="morango" name="sabores">
-        Morango
-        <br> <br>
-        
-        Selecione quais as cores da embalagem:
-        <br>
-        <input type="checkbox" id="amarelo"> Amarelo
-        <input type="checkbox" id="verde"> Verde
-        <input type="checkbox" id="sabugo"> Sabugo
-        <br> <br>
-        
-        Selecione um Estado para entrega:
+        Estado:
         <select id="estado">
             <option> Amapá </option>
             <option> Bahia </option>
@@ -67,6 +39,43 @@
             <option> Paraná </option>
             <option selected> Santa Catarina </option>
         </select>
+
+    </fieldset>
+
+    <br> <br>
+
+    <fieldset>
+        
+        <legend> Dados Profissionais </legend>
+        
+        Natureza do Cargo
+        <br>
+        <input type="radio" class=”cargos” id=”gerencia” name=”cargos”>
+         Gerência
+        <input type="radio" class=”cargos” id=”financeiro” name=”cargos”> 
+        Financeiro
+        <input type="radio" class=”cargos” id=”recepcao” name=”cargos”> 
+        Recepção
+        <input type="radio" class=”cargos” id=”administrativo” name=”cargos”> 
+        Administrativo
+        <input type="radio" class=”cargos” id=”juridico” name=”cargos”> 
+        Jurídico
+        <br> <br>
+        
+        Área de Interesse
+        <br>
+        <input type="checkbox" class=”areas” id=”computacao”> Computação
+        <input type="checkbox" class=”areas” id=”biologia”>  Biologia
+        <input type="checkbox" class=”areas” id=”meioambiente”> Meio Ambiente
+        <input type="checkbox" class=”areas” id=”biologia”> Biologia
+        <input type="checkbox" class=”areas” id=”historia”> História
+        <br> <br>
+        
+        Mini-curriculo
+        <br>
+        <div>
+            <textarea class="texto" id="curriculo"></textarea>
+        </div>
 
     </fieldset>
     
