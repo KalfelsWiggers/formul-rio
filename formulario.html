@@ -5,7 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Picolé</title>
-
+    <style>
+        .botoes
+        {
+            width: 100%;
+            display: flex;
+            justify-content: right;
+        }
+    </style>
 </head>
 <body>
     
@@ -52,18 +59,20 @@
         Selecione um Estado para entrega:
         <select id="estado">
             <option> Amapá </option>
-            <option> Odeiapá </option>
-            <option> Sao Paulo </option>
-            <option> Demonio Paulo </option>
-            <option selected> Joinville Senai Sul </option>
+            <option> Bahia </option>
+            <option> Rio Grande do Sul </option>
+            <option> Paraná </option>
+            <option selected> Santa Catarina </option>
         </select>
 
     </fieldset>
     
-    <br> <br>
+    <br>
 
-    <button> ENVIAR </button>
-    <button> LIMPAR </button>
+    <div class="botoes">
+        <button> ENVIAR </button>
+        <button> LIMPAR </button>
+    </div> 
 
 </body>
 </html>
