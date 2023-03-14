@@ -10,6 +10,7 @@
 <body>
     
     <fieldset>
+        
         <legend> Dados do Picolezinho </legend>
         Descrição: 
         <input type="text" class="caixa_larga" id="descriçao">
@@ -25,7 +26,44 @@
         <br> <br>
         Data do pedido:
         <input type="date" id="data_pedido">
+
     </fieldset>
+
+    <br> <br>
+
+    <fieldset>
+        
+        <legend> Sobre o sabor </legend>
+        Escolha somente 1 sabor:
+        <br> <br>
+        <input type="radio" id="Napolitano" name="sabores">
+        cu
+        <input type="radio" id="chocolate" name="sabores">
+        cu
+        <input type="radio" id="morango" name="sabores">
+        cu
+        <br> <br>
+        Selecione quais as cores da embalagem:
+        <br>
+        <input type="checkbox" id="amarelo"> cu
+        <input type="checkbox" id="verde"> cu
+        <input type="checkbox" id="sabugo"> cu
+        <br> <br>
+        Selecione um Estado para entrega:
+        <select id="estado">
+            <option> Amapá </option>
+            <option> Odeiapá </option>
+            <option> Sao Paulo </option>
+            <option> Demonio Paulo </option>
+            <option selected> Joinville Senai Sul </option>
+        </select>
+
+    </fieldset>
+    
+    <br> <br>
+
+    <button> ENVIAR </button>
+    <button> LIMPAR </button>
 
 </body>
 </html>
